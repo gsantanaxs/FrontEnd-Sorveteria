@@ -101,7 +101,7 @@
     </section>
 
     <script>
-        const API_URL = 'http://localhost:3000/api';
+        const API_URL = 'https://vercel-sorveteria.vercel.app/api';
         const navCategorias = document.getElementById('nav-categorias');
         const listaProdutos = document.getElementById('lista-produtos');
         const categoriaTitulo = document.getElementById('categorias-titulo');
@@ -138,7 +138,7 @@
             categoriaTitulo.innerText = nome;
             const botoes = document.querySelectorAll('.btn-cat');
             botoes.forEach(btn => {
-                if (parseInt(btn.dataset.id) === id) {
+                if (btn.dataset.id === String(id)) {
                     btn.classList.add('bg-primary', 'text-white', 'shadow-md');
                     btn.classList.remove('bg-gray-100', 'text-dark');
                 } else {
