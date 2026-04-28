@@ -1,0 +1,23 @@
+{
+    "name": "Sorveteria Docil",
+    "short_name": "Docil",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#F9A8D4",
+    "description": "Cardápio Digital da Sorveteria Docil",
+    "icons": [
+        {
+            "src": "./assets/images/logo-celular.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./assets/images/logo-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}
