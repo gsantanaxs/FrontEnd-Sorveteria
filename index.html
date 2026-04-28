@@ -30,7 +30,7 @@
     <!-- ================= HEADER ================= -->
     <header class="flex items-center justify-between px-6 mt-[5vh] sticky top-0 bg-white/90 backdrop-blur-md z-40 h-20 shadow-sm">
         <figure>
-            <img src="./assets/images/logo sorvete.png" alt="Logo Sorveteria Giovanna" class="w-[30vw] max-w-[160px] rounded-full shadow-lg" onerror="this.src='../img/logo.png'">
+            <img src="./assets/images/logo-sorvete.webp" alt="Logo Sorveteria Giovanna" class="w-[30vw] max-w-[160px] rounded-full shadow-lg" onerror="this.src='../img/logo.png'">
         </figure>
 
         <button id="menuBtn" class="md:hidden text-3xl">☰</button>
@@ -73,7 +73,7 @@
                 </a>
             </article>
             <figure class="md:w-[45%] mt-10 md:mt-0">
-                <img src="./assets/images/sorvete.png" alt="Taça de sorvete" class="w-full mx-auto drop-shadow-2xl" onerror="this.src='../img/banner.png'">
+                <img src="./assets/images/sorvete.webp" alt="Taça de sorvete" class="w-full mx-auto drop-shadow-2xl" onerror="this.src='../img/banner.png'">
             </figure>
         </div>
     </section>
@@ -169,7 +169,7 @@
             }
             produtos.forEach(p => {
                 const precoFormatado = p.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-                const imgSource = (p.imagem && p.imagem.startsWith('http')) ? p.imagem : `./assets/images/${p.imagem || 'logo.png'}`;
+                const imgSource = (p.imagem && p.imagem.startsWith('http')) ? p.imagem : `./assets/images/${p.imagem || 'logo-sorvete.webp'}`;
                 
                 const descSanitizada = (p.descricao || '').replace(/'/g, "\\'").replace(/\n/g, " ");
 
@@ -365,7 +365,7 @@
 
     <!-- BOTÃO WHATSAPP -->
     <a href="https://wa.me/5511945437097" target="_blank" class="fixed right-5 bottom-24 lg:bottom-10 lg:right-10 z-40 hover:scale-110 transition-transform">
-        <img src="./assets/images/whatsapp.png" alt="link-whatsapp" class="h-14 w-14 drop-shadow-lg" onerror="this.src='../img/whatsapp.png'">
+        <img src="./assets/images/whatsapp.webp" alt="link-whatsapp" class="h-14 w-14 drop-shadow-lg" onerror="this.src='../img/whatsapp.png'">
     </a>
 
 </body>
